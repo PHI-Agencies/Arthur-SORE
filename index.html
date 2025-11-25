@@ -434,6 +434,24 @@
             .gallery-grid {
                 grid-template-columns: 1fr; 
             }
+            /* Styles des icônes sociales dans le footer (visibilité secondaire) */
+.social-icons {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    color: rgb(220, 181, 10); 
+    font-size: 1.6rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+    transform: scale(1.2) translateY(-2px);
+}
         }
     </style>
 </head>
@@ -610,6 +628,11 @@
     </section>
 
     <footer>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@qrphicreations" target="_blank" title="TikTok de QR PHI"><i class="fab fa-tiktok"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=61581623601062" target="_blank" title="Facebook de QR PHI"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://phi-agencies.github.io/QRsite" target="_blank" title="Site Web de PHI Agencies"><i class="fas fa-globe"></i></a>
+        </div>
         <p>&copy; 2025 Arthur SORE. Tous droits réservés. | Site alimenté par votre QR-Shirt One Luxe de 
             <a href="https://phi-agencies.github.io/QRsite" target="_blank">QRPHI (N°1 au BF)</a>.
         </p>
