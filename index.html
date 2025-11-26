@@ -351,8 +351,7 @@
 
         .gallery-item img {
             width: 100%;
-            height: auto; /* L'image s'ajuste à sa hauteur naturelle */
-            /* object-fit: cover; <--- Supprimé pour éviter le rognage */
+            height: auto; 
             display: block;
             transition: transform 0.5s ease;
         }
@@ -376,6 +375,26 @@
         footer a {
             color: var(--color-accent);
         }
+
+        /* Styles des icônes sociales dans le footer (visibilité secondaire) */
+        .social-icons {
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .social-icons a {
+            color: rgb(220, 181, 10); 
+            font-size: 1.6rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--primary-color);
+            transform: scale(1.2) translateY(-2px);
+        }
+
 
         /* ========================================================= */
         /* 8. RESPONSIVE MOBILE (Toggle Menu) */
@@ -434,24 +453,6 @@
             .gallery-grid {
                 grid-template-columns: 1fr; 
             }
-            /* Styles des icônes sociales dans le footer (visibilité secondaire) */
-.social-icons {
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-.social-icons a {
-    color: rgb(220, 181, 10); 
-    font-size: 1.6rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: var(--primary-color);
-    transform: scale(1.2) translateY(-2px);
-}
         }
     </style>
 </head>
@@ -485,7 +486,7 @@
         <div class="hero-content">
             <img src="TH.jpg" alt="Photo de profil d'Arthur SORE" class="profile-pic"> 
             <h1>Arthur SORE</h1>
-            <p>Sociologue, Entrepreneur & Leader Activiste Burkinabè. Bâtir le présent par l'innovation et la connaissance. THURA BOSS dans l'âme.</p>
+            <p>Sociologue, Entrepreneur & Leader Activiste Burkinabè. Bâtir le présent par l'innovation et la connaissance. **THURA BOSS** dans l'âme.</p>
             <a href="https://wa.me/22666171370" target="_blank" class="cta-button">🤝 Proposer une collaboration</a>
         </div>
     </section>
@@ -496,15 +497,15 @@
             <div class="grid-cards">
                 <div class="card">
                     <h3>Sociologue de Formation</h3>
-                    <p>Diplômé en Environnement et Innovation Agricole. Cette expertise me permet d'analyser les systèmes complexes et de proposer des solutions durables pour le développement du Burkina Faso.</p>
+                    <p>Diplômé en **Environnement et Innovation Agricole**. Cette expertise me permet d'analyser les systèmes complexes et de proposer des solutions durables pour le développement du Burkina Faso.</p>
                 </div>
                 <div class="card">
                     <h3>Consultant (BGB)</h3>
-                    <p>Consultant au Bureau Géographique du Burkina (BGB Méridien). Mon rôle est d'apporter une vision stratégique et des données fiables pour l'aménagement du territoire et la prise de décision éclairée.</p>
+                    <p>Consultant au **Bureau Géographique du Burkina (BGB Méridien)**. Mon rôle est d'apporter une vision stratégique et des données fiables pour l'aménagement du territoire et la prise de décision éclairée.</p>
                 </div>
                 <div class="card">
                     <h3>Conférencier</h3>
-                    <p>Spécialisé en Désinformation et Journalisme de Solution. J'interviens pour sensibiliser et former aux enjeux médiatiques modernes et à la construction de narratifs positifs.</p>
+                    <p>Spécialisé en **Désinformation et Journalisme de Solution**. J'interviens pour sensibiliser et former aux enjeux médiatiques modernes et à la construction de narratifs positifs.</p>
                 </div>
             </div>
         </div>
@@ -516,19 +517,19 @@
             <div class="grid-cards">
                 <div class="card">
                     <h3>Conseiller SUNU ASSURANCES</h3>
-                    <p>En tant que Conseiller à SUNU ASSURANCES VIE Burkina, j'accompagne les particuliers et entreprises dans la sécurisation de leur avenir financier avec des produits d'assurance sur-mesure.</p>
+                    <p>En tant que Conseiller à **SUNU ASSURANCES VIE Burkina**, j'accompagne les particuliers et entreprises dans la sécurisation de leur avenir financier avec des produits d'assurance sur-mesure.</p>
                 </div>
                 <div class="card">
                     <h3>Manager Orange Dédougou</h3>
-                    <p>Manager de réseau chez Orange Dédougou. Je suis garant de la performance, de l'expansion du réseau et de l'excellence du service client dans ma zone.</p>
+                    <p>Manager de réseau chez **Orange Dédougou**. Je suis garant de la performance, de l'expansion du réseau et de l'excellence du service client dans ma zone.</p>
                 </div>
                 <div class="card">
                     <h3>PDG de la Marque "TH"</h3>
-                    <p>Créateur et PDG de la marque de Pull-over "TH". Une fusion entre la mode moderne et l'identité Burkinabè, symbolisant l'ambition et la qualité locale.</p>
+                    <p>Créateur et PDG de la marque de Pull-over **"TH"**. Une fusion entre la mode moderne et l'identité Burkinabè, symbolisant l'ambition et la qualité locale.</p>
                 </div>
                 <div class="card">
                     <h3>Coopérative UDOC</h3>
-                    <p>Président de la Coopérative de production et de transformation d'eau en sachet plastique à l'Université Daniel Ouezzin COULIBALY. Un engagement pour l'hygiène et l'entrepreneuriat étudiant.</p>
+                    <p>Président de la **Coopérative de production et de transformation d'eau en sachet plastique** à l'Université Daniel Ouezzin COULIBALY. Un engagement pour l'hygiène et l'entrepreneuriat étudiant.</p>
                 </div>
             </div>
         </div>
@@ -540,7 +541,7 @@
             <div class="grid-cards">
                 <div class="card">
                     <h3>Association JSV (Président)</h3>
-                    <p>Président de l'Association à but non lucrative Jeunesse, Santé, Vie (JSV). Notre mission : promouvoir la santé et l'épanouissement des jeunes au Burkina.</p>
+                    <p>Président de l'Association à but non lucrative **Jeunesse, Santé, Vie (JSV)**. Notre mission : promouvoir la santé et l'épanouissement des jeunes au Burkina.</p>
                 </div>
                 <div class="card">
                     <h3>Leader Activiste</h3>
@@ -548,7 +549,7 @@
                 </div>
                 <div class="card">
                     <h3>Responsabilités Universitaires</h3>
-                    <p>Ancien Délégué de promotion et Président du Club CNTS de l'Université de Dédougou*. Une expérience solide en gestion d'équipe et représentation estudiantine.</p>
+                    <p>Ancien Délégué de promotion et Président du **Club CNTS de l'Université de Dédougou**. Une expérience solide en gestion d'équipe et représentation estudiantine.</p>
                 </div>
             </div>
         </div>
@@ -592,7 +593,7 @@
     <section id="musique">
         <div class="container" style="text-align: center;">
             <h2 class="section-title">Artiste Musicien : THURA BOSS</h2>
-            <p style="max-width: 800px; margin: 0 auto 30px; font-style: italic;">"Au-delà du costume de consultant et d'entrepreneur, je suis Artiste musicien Burkinabè déclaré au Bureau Burkinabé des Droits d'Auteur (BBDA). Ma musique est un écho de mon engagement social et une source d'inspiration."</p>
+            <p style="max-width: 800px; margin: 0 auto 30px; font-style: italic;">"Au-delà du costume de consultant et d'entrepreneur, je suis **Artiste musicien Burkinabè** déclaré au Bureau Burkinabé des Droits d'Auteur (**BBDA**). Ma musique est un écho de mon engagement social et une source d'inspiration."</p>
             <a href="https://www.tiktok.com/@thuraboss" target="_blank" class="cta-button">🎧 Écouter THURA BOSS (TikTok)</a>
             <div style="font-size: 1rem; margin-top: 30px;">
                  <p>Consultez la section Réseaux Sociaux pour plus de plateformes !</p>
@@ -621,8 +622,14 @@
             
             <div class="gallery-grid">
                 <div class="gallery-item"><img src="photo_galerie_1.jpg" alt="Photo 1 d'Arthur SORE"></div>
-                <div class="gallery-item"><img src="photo_galerie_2.jpg" alt="Photo 2 d'Arthur SORE"></div>
-                <div class="gallery-item"><img src="photo_galerie_3.jpg" alt="Photo 3 d'Arthur SORE"></div>
+                <div class="gallery-item"><img src="photo_galerie_4.jpg" alt="Photo 2 d'Arthur SORE"></div>
+                <div class="gallery-item"><img src="photo_galerie_5.jpg" alt="Photo 3 d'Arthur SORE"></div>
+                <div class="gallery-item"><img src="photo_galerie_8.jpg" alt="Photo 4 d'Arthur SORE"></div>
+                <div class="gallery-item"><img src="photo_galerie_9.jpg" alt="Photo 5 d'Arthur SORE"></div>
+                <div class="gallery-item"><img src="photo_galerie_6.jpg" alt="Photo 6 d'Arthur SORE"></div>
+                
+                
+                
             </div>
         </div>
     </section>
